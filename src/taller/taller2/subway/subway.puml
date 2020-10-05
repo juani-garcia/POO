@@ -1,0 +1,44 @@
+@startuml
+
+abstract class SubwayCard {
+    - SubwayCentral subwayCentral
+    + {abstract} void ride()
+    # {abstract} boolean canRide()
+    # double rideCost()
+}
+
+SubwayCard <|-- RechargeableSubwayCard
+SubwayCard <|-- FixedSubwayCard
+
+class RechargeableSubwayCard {
+    - double balance
+    + RechargeableSubwayCard(SubwayCentral sc)
+    + void recharge(double amount)
+    - boolean canRide()
+}
+
+class FixedSubwayCard {
+     - double balance
+     + RechargeableSubwayCard(SubwayCentral sc)
+     + void recharge(double amount)
+     - boolean canRide()
+}
+
+class SubwayCentral {
+    - double rideCost
+    + SubwayCentral(double rideCost)
+    + double getRideCost()
+    + void setRideCost(double rideCost)
+}
+
+class DiscountRechargeableSubwayCard{
+    - double discount
+    + DiscountRechargeableSubwayCard(SubwayCentral sc, double discount)
+    # double rideCost()
+}
+
+RechargeableSubwayCard <|-- DiscountRechargeableSubwayCard
+
+SubwayCard *--R SubwayCentral
+
+@enduml

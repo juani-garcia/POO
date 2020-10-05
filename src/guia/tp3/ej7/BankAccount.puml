@@ -1,0 +1,24 @@
+@startuml
+Abstract class BankAccount{
+    -int id
+    -double balance
+    +void deposit(double amount)
+    +void extract(double amount)
+    #boolean canExtract(double amount)
+    +double getBalance()
+}
+
+class CheckingAccount{
+    -double overdraft
+    +CheckingAccount(int id, double overdraft)
+    #boolean canExtract(double amount)
+}
+
+class SavingAccount{
+    +SavingAccount(int id)
+    #boolean canExtract(double amount)
+}
+
+BankAccount <|-- SavingAccount
+BankAccount <|-- CheckingAccount
+@enduml

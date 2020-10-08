@@ -4,16 +4,16 @@ import java.util.*;
 
 public class MultiSortedCollectionImpl<T> implements MultiSortedCollection<T> {
     Map<Comparator<T>, SortedSet<T>> msc;
-    List<T> elems;
+    Set<T> elems;
 
     public MultiSortedCollectionImpl() {
         this.msc = new HashMap<>();
-        this.elems = new LinkedList<T>();
+        this.elems = new HashSet<>();
     }
 
     @Override
     public void add(Comparator<T> comp) {
-        msc.put(comp, new TreeSet<T>(comp));
+        msc.put(comp, new TreeSet<>(comp));
         msc.get(comp).addAll(elems);
     }
 

@@ -3,21 +3,28 @@ package guia.tp6.ej9;
 import java.util.*;
 
 public class TimeSetImpl<E> implements TimeSet<E>{
-    private final Map<E, TimeElem> ts;
+    private final SortedSet<TimeElem<E>> ts;
 
-    public TimeSetImpl() {
-        this.ts = new HashMap<>();
+    public TimeSetImpl(){
+        this.ts = new TreeSet<>();
     }
 
     @Override
     public void add(E elem, int hours, int minutes) {
-        TimeElem time = new TimeElem(hours, minutes);
-        ts.put(elem, time);
+        remove(elem);
+        TimeElem<E> te = new TimeElem<>(elem, hours, minutes);
+        ts.add(te);
     }
 
     @Override
     public void remove(E elem) {
-        ts.remove(elem);
+       Iterator<TimeElem<E>> it = ts.iterator();
+       while(it.hasNext()){
+           if(it.next().getElem().equals(elem)){
+               it.remove();
+               return;
+           }
+       }
     }
 
     @Override
@@ -27,28 +34,35 @@ public class TimeSetImpl<E> implements TimeSet<E>{
 
     @Override
     public boolean contains(E elem) {
-        return ts.containsKey(elem);
+        for (TimeElem<E> t : ts) {
+            if (t.getElem().equals(elem))
+                return true;
+        }
+        return false;
     }
 
     @Override
     public Set<E> retrieve(int hoursFrom, int minutesFrom, int hoursTo, int minutesTo) {
-        TimeElem timeFrom = new TimeElem(hoursFrom, minutesFrom);
-        TimeElem timeTo = new TimeElem(hoursTo, minutesTo);
+        TimeElem<E> tf = new TimeElem<>(null, hoursFrom, minutesFrom);
+        TimeElem<E> tt = new TimeElem<>(null, hoursTo, minutesTo);
         Set<E> ans = new HashSet<>();
-        for(E key : ts.keySet()){
-            TimeElem time = ts.get(key);
-            if(time.compareTo(timeFrom) >= 0 && time.compareTo(timeTo) <= 0)
-                ans.add(key);
+        for(TimeElem<E> te : ts){
+            if(te.compareTo(tt) > 0)
+                break;
+            if(te.compareTo(tf) > 0)
+                ans.add(te.getElem());
         }
         return ans;
     }
 
-    private static class TimeElem implements Comparable<TimeElem>{
+    private static class TimeElem<T> implements Comparable<TimeElem<T>>{
         private final int hour, minutes;
+        private final T elem;
 
-        TimeElem(int hour, int minutes) {
+        private TimeElem(T elem, int hour, int minutes) {
             this.hour = hour;
             this.minutes = minutes;
+            this.elem = elem;
         }
 
         @Override
@@ -57,6 +71,15 @@ public class TimeSetImpl<E> implements TimeSet<E>{
             if(cmp == 0)
                 cmp = Integer.compare(minutes, o.minutes);
             return cmp;
+        }
+
+        @Override
+        public String toString() {
+            return elem.toString();
+        }
+
+        private T getElem(){
+            return elem;
         }
     }
 }

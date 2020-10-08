@@ -3,9 +3,11 @@ package guia.tp6.ej8;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.function.BiFunction;
 
 public class BagImpl<E> implements Bag<E>{
     private Map<E, Integer> bag;
+    private int size;
 
     public BagImpl(){
         this.bag = new HashMap<>();
@@ -14,7 +16,7 @@ public class BagImpl<E> implements Bag<E>{
     @Override
     public void add(E elem) {
         bag.putIfAbsent(elem, 0);
-        bag.put(elem, bag.get(elem) + 1);
+        bag.merge(elem, 1, Integer::sum);
     }
 
     @Override
@@ -34,11 +36,7 @@ public class BagImpl<E> implements Bag<E>{
 
     @Override
     public int size() {
-        int sum = 0;
-        for(int e : bag.values()){
-            sum += e;
-        }
-        return sum;
+        return size;
     }
 
     @Override

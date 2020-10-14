@@ -23,26 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01882f9-cc38-41e5-acaf-c4f41ecfa9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej4/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej4/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej4/Ranker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej4/RankerTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej5/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej5/BagImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej5/IterableBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej5/IterableBagImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej5/IterableBagTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej6/MultiMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej6/MultiMapImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej6/MultiMapTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej7/SortedMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/CheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/MovementType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/PremiumAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/PremiumAccountTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/ShopDiscountsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/Cashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/NoCashException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/NoteDispenser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,19 +174,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Deletrear" />
       <item itemvalue="Application.ConcatIteratorTester" />
@@ -282,7 +252,8 @@
       <workItem from="1602186580395" duration="12133000" />
       <workItem from="1602292835091" duration="308000" />
       <workItem from="1602293260707" duration="2325000" />
-      <workItem from="1602518465918" duration="19835000" />
+      <workItem from="1602518465918" duration="20531000" />
+      <workItem from="1602620164852" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="TP7 Ejercicio 1">
       <created>1602168687853</created>
@@ -305,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602198816579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" Ejercicios 4-8 del TP7">
+      <created>1602542948359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602542948359</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +304,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TP7 Ejercicio 1" />
     <MESSAGE value="Commit 08/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 08/10" />
+    <MESSAGE value=" Ejercicios 4-8 del TP7" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Ejercicios 4-8 del TP7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" key="#Project_Structure" timestamp="1597937207077">
@@ -369,22 +348,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601936525263" />
-    <state width="1493" height="164" key="GridCell.Tab.0.bottom" timestamp="1602537566480">
+    <state width="1493" height="164" key="GridCell.Tab.0.bottom" timestamp="1602551157319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602537566480" />
-    <state width="1493" height="164" key="GridCell.Tab.0.center" timestamp="1602537566480">
+    <state width="1493" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
+    <state width="1493" height="164" key="GridCell.Tab.0.center" timestamp="1602551157319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602537566480" />
-    <state width="1493" height="164" key="GridCell.Tab.0.left" timestamp="1602537566480">
+    <state width="1493" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
+    <state width="1493" height="164" key="GridCell.Tab.0.left" timestamp="1602551157318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602537566480" />
-    <state width="1493" height="164" key="GridCell.Tab.0.right" timestamp="1602537566480">
+    <state width="1493" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602551157318" />
+    <state width="1493" height="164" key="GridCell.Tab.0.right" timestamp="1602551157319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602537566480" />
+    <state width="1493" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1600304742243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

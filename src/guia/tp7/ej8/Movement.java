@@ -3,12 +3,16 @@ package guia.tp7.ej8;
 public class Movement {
     private final MovementType type;
     private final double amount;
-    private String shop;
+    private final String shop;
 
     public Movement(MovementType type, double amount){
         this.type = type;
         this.amount = amount;
         this.shop = "";
+    }
+
+    public double getAmount() {
+        return amount;
     }
 
     public Movement(MovementType type, double amount, String shop){

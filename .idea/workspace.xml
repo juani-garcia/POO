@@ -23,10 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01882f9-cc38-41e5-acaf-c4f41ecfa9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/Cashier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/NoCashException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/NoteDispenser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej7/MyComparableClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej7/SortedMapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej7/SortedMapTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/ChangeCashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guia/tp7/ej9/ChangeCashierTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guia/tp7/ej7/SortedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia/tp7/ej7/SortedMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guia/tp7/ej8/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guia/tp7/ej8/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/Movement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guia/tp7/ej8/PremiumAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia/tp7/ej8/PremiumAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,20 +100,7 @@
       <recent name="C:\Users\jig23\OneDrive\Documentos\POO\src\guia\tp6\ej4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PremiumAccountTester">
-    <configuration name="ConcatIteratorTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="guia.tp7.ej3.ConcatIteratorTester" />
-      <module name="POO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guia.tp7.ej3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SortedMapTester">
     <configuration name="Deletrear" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="guia.tp2.ej3.Deletrear" />
       <module name="POO" />
@@ -174,21 +167,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortedMapTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guia.tp7.ej7.SortedMapTester" />
+      <module name="POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guia.tp7.ej7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Deletrear" />
-      <item itemvalue="Application.ConcatIteratorTester" />
       <item itemvalue="Application.RankerTester" />
       <item itemvalue="Application.IterableBagTester" />
       <item itemvalue="Application.MultiMapTester" />
       <item itemvalue="Application.PremiumAccountTester" />
+      <item itemvalue="Application.SortedMapTester" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortedMapTester" />
         <item itemvalue="Application.PremiumAccountTester" />
         <item itemvalue="Application.MultiMapTester" />
         <item itemvalue="Application.IterableBagTester" />
         <item itemvalue="Application.RankerTester" />
-        <item itemvalue="Application.ConcatIteratorTester" />
       </list>
     </recent_temporary>
   </component>
@@ -254,6 +271,9 @@
       <workItem from="1602293260707" duration="2325000" />
       <workItem from="1602518465918" duration="20531000" />
       <workItem from="1602620164852" duration="751000" />
+      <workItem from="1602707857084" duration="682000" />
+      <workItem from="1602773796560" duration="204000" />
+      <workItem from="1602774097131" duration="6125000" />
     </task>
     <task id="LOCAL-00001" summary="TP7 Ejercicio 1">
       <created>1602168687853</created>
@@ -283,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602542948359</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Guia 7 Ejercicio 9 sin terminar">
+      <created>1602708192319</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602708192319</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +332,8 @@
     <MESSAGE value="TP7 Ejercicio 1" />
     <MESSAGE value="Commit 08/10" />
     <MESSAGE value=" Ejercicios 4-8 del TP7" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Ejercicios 4-8 del TP7" />
+    <MESSAGE value="Guia 7 Ejercicio 9 sin terminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guia 7 Ejercicio 9 sin terminar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" key="#Project_Structure" timestamp="1597937207077">
@@ -320,9 +348,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="225" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598056720289" />
-    <state x="1019" y="97" width="386" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1602536646839">
+    <state x="1019" y="97" width="386" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1602780329807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="1019" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/3840.588.1920.1040@0.0.1536.824" timestamp="1602780329807" />
     <state x="1019" y="97" width="386" height="584" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602536646839" />
     <state x="553" y="308" width="430" height="215" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602533842776">
       <screen x="0" y="0" width="1536" height="824" />
@@ -348,21 +377,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601936525263" />
-    <state width="1493" height="164" key="GridCell.Tab.0.bottom" timestamp="1602551157319">
+    <state width="1493" height="164" key="GridCell.Tab.0.bottom" timestamp="1602780516077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824/3840.588.1920.1040@0.0.1536.824" timestamp="1602780516077" />
     <state width="1493" height="164" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
-    <state width="1493" height="164" key="GridCell.Tab.0.center" timestamp="1602551157319">
+    <state width="1493" height="164" key="GridCell.Tab.0.center" timestamp="1602780516077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="164" key="GridCell.Tab.0.center/0.0.1536.824/3840.588.1920.1040@0.0.1536.824" timestamp="1602780516077" />
     <state width="1493" height="164" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
-    <state width="1493" height="164" key="GridCell.Tab.0.left" timestamp="1602551157318">
+    <state width="1493" height="164" key="GridCell.Tab.0.left" timestamp="1602780516077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="164" key="GridCell.Tab.0.left/0.0.1536.824/3840.588.1920.1040@0.0.1536.824" timestamp="1602780516077" />
     <state width="1493" height="164" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602551157318" />
-    <state width="1493" height="164" key="GridCell.Tab.0.right" timestamp="1602551157319">
+    <state width="1493" height="164" key="GridCell.Tab.0.right" timestamp="1602780516077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="164" key="GridCell.Tab.0.right/0.0.1536.824/3840.588.1920.1040@0.0.1536.824" timestamp="1602780516077" />
     <state width="1493" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602551157319" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1600304742243">
       <screen x="0" y="0" width="1536" height="824" />

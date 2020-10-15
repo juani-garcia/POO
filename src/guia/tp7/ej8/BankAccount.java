@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class BankAccount {
     private final int id;
-    protected double balance;
+    private double balance;
     private final List<Movement> movements;
 
     protected BankAccount(int id) {
@@ -19,9 +19,14 @@ public abstract class BankAccount {
     }
 
     public void extract(double amount){
+        extract(new Movement(MovementType.EXTRACTION, amount));
+    }
+
+    public void extract(Movement mvt){
+        double amount = mvt.getAmount();
         if(canExtract(amount)){
             balance -= amount;
-            addMovement(new Movement(MovementType.EXTRACTION, amount));
+            addMovement(mvt);
         }
         else
             System.out.println("Credito insuficiente");

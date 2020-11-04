@@ -21,7 +21,7 @@ public class ConcatNSimpleList<T> implements SimpleList<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             private int current;
             private Iterator<T> it = concat.size() == 0? Collections.emptyIterator() : concat.get(0).iterator();
 
@@ -30,9 +30,10 @@ public class ConcatNSimpleList<T> implements SimpleList<T> {
                 if(it.hasNext()){
                     return true;
                 }
-                for(int i = current + 1; i < concat.size(); i++){
-                    Iterator<T> aux = concat.get(i).iterator();
-                    if(aux.hasNext()){
+                while(current < concat.size()){
+                    current++;
+                    it = concat.get(current).iterator();
+                    if(it.hasNext()){
                         return true;
                     }
                 }
@@ -43,10 +44,6 @@ public class ConcatNSimpleList<T> implements SimpleList<T> {
             public T next() {
                 if(!hasNext()){
                     throw new NoSuchElementException();
-                }
-                while(!it.hasNext()){
-                    current++;
-                    it = concat.get(current).iterator();
                 }
                 return it.next();
             }

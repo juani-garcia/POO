@@ -21,11 +21,11 @@ public class Library {
     }
 
     public void printDueLoansBooks(LocalDate date){
-        System.out.println(String.format("Due loans at %s\n", date));
+        System.out.printf("Due loans at %s\n%n", date);
         for(Person p : borrowedBooks.keySet()){
             BorrowType borrow = borrowedBooks.get(p);
             if(borrow.isDueAt(date)){
-                System.out.println(String.format("%s (%s - %s)", p, borrow, borrow.dateDue.minusDays(p.getRole().getDays())));
+                System.out.printf("%s (%s - %s)%n", p, borrow, borrow.dateDue.minusDays(p.getRole().getDays()));
             }
         }
     }
@@ -36,8 +36,8 @@ public class Library {
     }
 
     private static class BorrowType{
-        private LocalDate dateDue;
-        private String book;
+        private final LocalDate dateDue;
+        private final String book;
 
         public BorrowType(LocalDate date, String book) {
             this.dateDue = date;

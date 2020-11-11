@@ -22,10 +22,7 @@ public class LimitedCache<K, V> implements Cache<K, V>{
 
     private void deleteMinKey(){
         Optional<K> minKey = cache.keySet().stream().min(Comparator.comparingInt(k -> cache.get(k).amount));
-        if(minKey.isEmpty()){
-            throw new NoSuchElementException();
-        }
-        cache.remove(minKey.get());
+        cache.remove(minKey.orElse(null));
     }
 
     @Override
@@ -49,10 +46,6 @@ public class LimitedCache<K, V> implements Cache<K, V>{
         private T getValue(){
             amount++;
             return value;
-        }
-
-        private int getAmount(){
-            return amount;
         }
     }
 }
